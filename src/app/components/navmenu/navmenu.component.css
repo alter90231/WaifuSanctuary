@@ -11,7 +11,6 @@ header {
 .divLogo {
     width: 300px;
     height: 100%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     color: #ffffff;
     display: flex;
@@ -24,6 +23,37 @@ header {
     height: auto;
     margin-left: 20px;
     margin-right: 20px;
+    animation-name: floating;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    cursor:grab ;
+}
+
+.divLogo .rubor{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    width: 40px;
+    animation-name: floating;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+
+@keyframes floating {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .navmenu {
@@ -45,9 +75,10 @@ header {
 
 .navmenu ul li a {
     text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     color: #ffffff;
+    transition: all 0.3s ease-in-out;
+
 }
 
 .navmenu ul li a:hover {
@@ -63,19 +94,6 @@ header {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .btnLogin {
     background-color: #db2357;
     border: none;
@@ -83,11 +101,21 @@ header {
     padding-inline: 30px;
     border-radius: 10px;
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
 }
 
 .btnLogin:hover {
     border: #ffffff solid 1px;
     cursor: pointer;
+}
+
+.custom-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
