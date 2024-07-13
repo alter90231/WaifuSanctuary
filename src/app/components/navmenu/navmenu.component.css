@@ -1,0 +1,93 @@
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #e04d77;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.divLogo {
+    width: 300px;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.divLogo img {
+    width: 80px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navmenu {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navmenu ul {
+    display: flex;
+}
+
+.navmenu ul li {
+    list-style: none;
+    margin-inline: 20px;
+}
+
+.navmenu ul li a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.navmenu ul li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.account {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btnLogin {
+    background-color: #db2357;
+    border: none;
+    padding-block: 15px;
+    padding-inline: 30px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.btnLogin:hover {
+    border: #ffffff solid 1px;
+    cursor: pointer;
+}
